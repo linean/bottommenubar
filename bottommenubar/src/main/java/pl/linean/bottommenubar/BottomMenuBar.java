@@ -87,7 +87,7 @@ public class BottomMenuBar {
         element.getElementView().startAnimation(AnimationUtils.loadAnimation(activity, R.anim.click_anim));
         element.enableSelection();
 
-        if (previousSelection != null)
+        if (previousSelection != null && element != previousSelection)
             previousSelection.disableSelection();
 
         previousSelection = element;
